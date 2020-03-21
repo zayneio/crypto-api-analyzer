@@ -14,7 +14,7 @@ module CoinAnalyzer
       name = Helpers.underscore(api)
 
       define_method("get_#{name}_price".to_sym) do
-        "Getting price for #{name}"
+        puts "Getting price for #{name}..."
         klass.parsed_response(get(klass.url, klass.options))
       end
     end
