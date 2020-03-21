@@ -28,6 +28,7 @@ module CoinAnalyzer
           @results[name.to_sym]&.push(response.to_s) 
         end
 
+        puts "Next check in #{@delay} seconds..."
         sleep(@delay)
       end
     end
